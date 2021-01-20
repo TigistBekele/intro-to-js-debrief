@@ -1,21 +1,21 @@
 // GenBuzz
 
-let myNumber = 30;
-if (typeof myNumber !== "number") {
-  console.log("This is not a number");
-} else if (myNumber % 3 === 0 && myNumber % 5 === 0) {
-  console.log("GenBuzz");
-} else if (myNumber % 3 === 0) {
-  console.log("Gen");
-} else if (myNumber % 5 === 0) {
-  console.log("Buzz");
-} else {
-  console.log(myNumber);
+for (let myNumber = 1; myNumber < 100; myNumber++) {
+  if (typeof myNumber !== "number") {
+    console.log("This is not a number");
+  } else if (myNumber % 3 === 0 && myNumber % 5 === 0) {
+    console.log("GenBuzz");
+  } else if (myNumber % 3 === 0) {
+    console.log("Gen");
+  } else if (myNumber % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(myNumber);
+  }
 }
-
 // E-Commerce Item list
 
-let itemsInStore = "Ha";
+let itemsInStore;
 switch (itemsInStore) {
   case "shoes-$50":
     console.log("shoes are $50");
